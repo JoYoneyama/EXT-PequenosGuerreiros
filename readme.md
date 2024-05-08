@@ -10,14 +10,14 @@ May/2024
 This is a university project with the purpose of re-desinging the existing website of the NGO Pequenos Guerreiros from Uberlândia - MG, Brazil
 
 # Credits
-João Vitor Yoneyama
 [![Github](https://img.shields.io/badge/GitHub-Joyoneyama?style=flat&logo=github&labelColor=gray&color=blue&link=https%3A%2F%2Fgithub.com%2FJoYoneyama
 )](https://github.com/JoYoneyama)
+João Vitor Yoneyama
 
-Lucas M. Gimenez
 [![Github](https://img.shields.io/badge/GitHub-Moscofian?style=flat&logo=github&labelColor=gray&color=blue&link=https%3A%2F%2Fgithub.com%2FMoscofian
 )](https://github.com/Moscofian)
+Lucas M. Gimenez
 
-Gabriel Dias Ribeiro
 [![Github](https://img.shields.io/badge/GitHub-Tsarco?style=flat&logo=github&labelColor=gray&color=blue&link=https%3A%2F%2Fgithub.com%2FTsarco
 )](https://github.com/Tsarco)
+Gabriel Dias Ribeiro
