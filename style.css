@@ -1,5 +1,6 @@
 :root {
   --cor-verde1: #48c39d;
+  --cor-verde2: #3db28d;
   --cor-azul: #168fd8;
 
 }
@@ -16,31 +17,40 @@ ul {
     list-style-type: none;
     margin: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #42d6a7;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 2;
-    height: 90px;
+    height: 95px;
   }
   
   li {
     float: left;
+  }
+
+  .titulosNavBar{
+    margin-left: 8em;
   }
   
   li a {
     display: block;
     color: white;
     text-align: center;
-    margin: 19px 5px;
+    margin: 19px 7px;
     padding: 12px 12px;
     text-decoration: none;
+    font-size: x-large;
+    font-family: "Archivo Black", sans-serif;
+    transition: transform 0.2s, background-color 0.2s;
   }
   
   /* muda a cor ao sobrepor o mouse */
   li a:hover {
-    background-color: #111;
+    transform: scale(0.95);
+    border-radius: 12px;
+    background-color: var(--cor-verde2);
   }
 
   * {box-sizing:border-box}
