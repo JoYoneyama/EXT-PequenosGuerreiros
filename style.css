@@ -302,7 +302,7 @@ ul {
     border-color: #3db28d;
     
     display: flex;
-    justify-content: space-evenny;
+    justify-content: space-evenly;
     flex-direction: row;
   }
 
