@@ -1,3 +1,4 @@
+
 :root {
   --cor-verde1: #48c39d;
   --cor-verde2: #3db28d;
@@ -293,3 +294,24 @@ ul {
 .contato{
   margin-left: 1192px;
 }
+
+
+#contentrodape{
+    border-style: solid;
+    background-color: rgb(234, 234, 234);
+    border-color: #3db28d;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .endcentro{
+    text-align: center;
+  }
+
+  .bordmapa{
+    border-style: solid;
+    border-color: #3db28d;
+    border-radius: 5px;
+  }
