@@ -286,32 +286,38 @@ ul {
   float: left;
 }
 
+#containerrodape{
+background-color: #e9e9e9;
+
+width: 100%;
+height: 300px;
+border-width: 5px;
+border-color: #48c39d;
+border-style: solid;
+border-left: black;
+border-right: black;
+
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.paginas{
+  padding: 10px, 24px;
+}
 .endereco{
-  margin-left: 248px;
-  float: left;
+  text-align: center;
+  padding: 10px, 24px;
+}
+
+.maps{
+  border-style: solid;
+  border-color: #48c39d;
+  border-width: 2px;
+  border-radius: 10px;
 }
 
 .contato{
-  margin-left: 1192px;
+  padding: 10px, 24px;
 }
-
-
-#contentrodape{
-    border-style: solid;
-    background-color: rgb(234, 234, 234);
-    border-color: #3db28d;
-    
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-  }
-
-  .endcentro{
-    text-align: center;
-  }
-
-  .bordmapa{
-    border-style: solid;
-    border-color: #3db28d;
-    border-radius: 5px;
-  }
