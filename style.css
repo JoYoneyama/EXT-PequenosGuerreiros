@@ -6,6 +6,19 @@
 
 }
 
+@keyframes animacao{
+
+  from{
+    opacity: 0;
+    transform: translateY(30px);
+  } 
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -33,6 +46,10 @@ ul {
 
   .titulosNavBar{
     margin-left: 8em;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
   }
   
   li a {
@@ -160,11 +177,17 @@ ul {
 
 .item1{
   width: 20em;
-
+  opacity: 0;
+  animation-name: animacao;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .item2{
   width: 40em;
+  animation-name: animacao;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .container h1{
@@ -260,6 +283,10 @@ ul {
   z-index: 1;
   text-align: center;
   color: white;
+  opacity: 0;
+  animation-name: animacao;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .info1 img{
@@ -278,6 +305,10 @@ ul {
   z-index: 1;
   text-align: center;
   color: white;
+  opacity: 0;
+  animation-name: animacao;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .info2 img{
@@ -296,6 +327,10 @@ ul {
   z-index: 1;
   text-align: center;
   color: white;
+  opacity: 0;
+  animation-name: animacao;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .info3 img{
@@ -333,7 +368,6 @@ border-style: solid;
 border-left: black;
 border-right: black;
 
-
 display: flex;
 flex-direction: row;
 justify-content: space-around;
@@ -341,10 +375,18 @@ justify-content: space-around;
 
 .paginas{
   padding: 10px, 24px;
+  opacity: 0;
+  animation-name: animacao;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 .endereco{
   text-align: center;
   padding: 10px, 24px;
+  opacity: 0;
+  animation-name: animacao;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .maps{
@@ -352,8 +394,16 @@ justify-content: space-around;
   border-color: #48c39d;
   border-width: 2px;
   border-radius: 10px;
+  opacity: 0;
+  animation-name: animacao;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .contato{
   padding: 10px, 24px;
+  opacity: 0;
+  animation-name: animacao;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
