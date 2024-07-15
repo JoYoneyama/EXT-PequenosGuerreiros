@@ -55,9 +55,6 @@ ul {
   .titulosNavBar{
     margin-left: 3em;
     opacity: 0;
-    animation-name: animacao;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
   }
   
   li a {
@@ -187,16 +184,11 @@ ul {
 .item1{
   width: 20em;
   opacity: 0;
-  animation-name: animacao;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
 
 .item2{
   width: 40em;
-  animation-name: animacao;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .container h1{
@@ -291,26 +283,11 @@ ul {
   z-index: 0;
 }
 
-/*.imgInfo img{
-  width: 100%;
-  height: auto;
-  position: absolute; 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  clip-path: inset(10% 0 30% 0);
-  z-index: 0;
-  filter: brightness(1.1) saturate(0.7);
-}*/
-
 .info1{
   z-index: 1;
   text-align: center;
   color: white;
   opacity: 0;
-  animation-name: animacao;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
 
 .info1 img{
@@ -330,9 +307,6 @@ ul {
   text-align: center;
   color: white;
   opacity: 0;
-  animation-name: animacao;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
 
 .info2 img{
@@ -352,9 +326,6 @@ ul {
   text-align: center;
   color: white;
   opacity: 0;
-  animation-name: animacao;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
 
 .info3 img{
@@ -400,17 +371,15 @@ justify-content: space-around;
 .paginas{
   padding: 10px, 24px;
   opacity: 0;
-  animation-name: animacao;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
+
 .endereco{
+  opacity: 0;
+}
+
+.endereco h3{
   text-align: center;
   padding: 10px, 24px;
-  opacity: 0;
-  animation-name: animacao;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
 
 .maps{
@@ -419,15 +388,55 @@ justify-content: space-around;
   border-width: 2px;
   border-radius: 10px;
   opacity: 0;
-  animation-name: animacao;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
 
 .contato{
   padding: 10px, 24px;
   opacity: 0;
-  animation-name: animacao;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+}
+
+.titulosNavBar.in-view{
+  animation: animacao 2s forwards;
+}
+
+.item1.in-view{
+  animation: animacao 2s forwards;
+}
+
+.item2.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.4s;
+}
+
+.info1.in-view{
+  animation: animacao 2s forwards;
+}
+
+.info2.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.4s;
+}
+
+.info3.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.8s;
+}
+
+.paginas.in-view{
+  animation: animacao 2s forwards;
+}
+
+.endereco.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.4s;
+}
+
+.maps.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.8s;
+}
+
+.contato.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 1.2s;
 }
