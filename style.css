@@ -24,75 +24,69 @@ body{
     padding: 0;
     background-color: #fff;
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 /* -- NAVBAR -- */
 ul {
     list-style-type: none;
     margin: 0;
-    overflow: hidden;
     background-color: #67de61;
-    background-image: url(./images/green\ background\ 2.jpg);
     filter: brightness(90%);
-    background-repeat: no-repeat;
-    background-size: cover;
     opacity: 0.8;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 2;
-    height: 95px;
-    -webkit-text-stroke-width: 1px; 
-    -webkit-text-stroke-color: rgb(0, 0, 0);
-    
+    height: 90px;  
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid var(--cor-verde2);
   }
   
-  li {
-    float: left;
-  }
-
-  .titulosNavBar{
-    margin-left: 3em;
-    opacity: 0;
-  }
-  
-  li a {
-    display: block;
+  li a { 
     color: white;
     text-align: center;
-    margin: 19px 7px;
+    margin: 19px 5px;
     padding: 12px 12px;
     text-decoration: none;
+    border-radius: 12px;
     font-size: x-large;
     font-family: "Archivo Black", sans-serif;
     transition: transform 0.2s, background-color 0.2s;
+  }
+
+  li img{
+    margin-right: 7px;
   }
   
   /* muda a cor ao sobrepor o mouse */
   li a:hover {
     transform: scale(0.95);
     border-radius: 12px;
-    background-color: var(--cor-verde2);
+    background-color: var(--cor-azul);
   }
 
   * {box-sizing:border-box}
 
 /* -- CARROSSEL -- */
 .slideshow-container{
+  max-width: 100%;
   width: 100%; 
-  height: 14cm;
+  height: 2cm;
   position: relative;
-  margin-top: 95px;
+  margin-top: 90px;
   z-index: 0;
   overflow: hidden;
+  border-bottom: 4px solid var(--cor-verde2);
 }
 
 .slideshow-container img{
   width: 100%;
+  height: auto;
   object-fit: cover;
   object-position: center;
-  position: relative;
 }
 
 /* Esconder imagens por default */
@@ -125,18 +119,6 @@ ul {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
-}
-
-/* texto da legenda */
-.textImg {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  background-color: #333;
 }
 
 /* The dots/bullets/indicators */
@@ -398,8 +380,8 @@ justify-content: space-around;
   opacity: 0;
 }
 
-.titulosNavBar.in-view{
-  animation: animacao 2s forwards;
+li.in-view{
+  animation: animacao 1.5s forwards;
 }
 
 .item1.in-view{
@@ -442,4 +424,51 @@ justify-content: space-around;
 .contato.in-view{
   animation: animacao 2s forwards;
   animation-delay: 1.2s;
+}
+
+@media (min-width: 336px){
+  .slideshow-container{
+    height: 3cm;
+  }
+}
+
+@media (min-width: 576px){
+  .slideshow-container{
+    height: 5cm;
+  }
+}
+
+@media(min-width: 768px){
+  .slideshow-container{
+    height: 8cm;
+  }
+}
+
+@media(min-width: 992px){
+  .slideshow-container{
+    height: 10cm;
+  }
+}
+
+@media(min-width: 1200px){
+  .slideshow-container{
+    height: 12cm;
+  }
+}
+
+@media (min-width: 1400px){
+  ul{
+    height: 95px;
+  }
+
+  li a{
+    margin: 19px 7px;
+    padding: 12px 12px;
+    font-size: x-large;
+  }
+
+  .slideshow-container{
+    margin-top: 95px;
+    height: 14cm;
+  }
 }
