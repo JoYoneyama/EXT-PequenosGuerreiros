@@ -42,7 +42,7 @@ ul {
     height: 90px;  
     display: flex;
     align-items: center;
-    border-bottom: 4px solid var(--cor-verde2);
+    justify-content: center;
   }
   
   li a { 
@@ -80,6 +80,7 @@ ul {
   z-index: 0;
   overflow: hidden;
   border-bottom: 4px solid var(--cor-verde2);
+  border-top: 4px solid var(--cor-verde2);
 }
 
 .slideshow-container img{
@@ -246,8 +247,8 @@ ul {
   background-blend-mode: multiply;
   margin-top: 3cm;
   position: relative;
-  border-top: 8px solid var(--cor-verde2);
-  border-bottom: 8px solid var(--cor-verde2);
+  border-top: 5px solid var(--cor-verde2);
+  border-bottom: 5px solid var(--cor-verde2);
   display: flex;
   float: right;
   justify-content: space-around;

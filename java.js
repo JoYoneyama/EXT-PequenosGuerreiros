@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {         //checa se o docum
         entry.target.classList.add('in-view');
         return;
       }
-      entry.target.classList.remove('in-view');
+      
     })
   })
 
