@@ -71,6 +71,7 @@ ul {
   li a:hover {
     transform: scale(0.9);
     color: var(--cor-azul);
+    text-decoration: none;
   }
 
   * {box-sizing:border-box}
@@ -97,7 +98,7 @@ ul {
 .pg{
   opacity: 0;
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 10%;
   transform: translate(-50%, -50%);
   color: white;
@@ -108,65 +109,6 @@ ul {
   z-index: 1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
-}
-
-/* Esconder imagens por default */
-.mySlides {
-  display: none;
-}
-
-/* botões do carrossel */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* posicionar o botão next */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {position: 0;}
-  to {position: 100px}
 }
 
 /* -- SEÇÃO SOBRE NÓS -- */
@@ -240,9 +182,10 @@ ul {
 
 .botao:hover {
   transform: translateY(-0.5em);
-  background-color: var(--cor-verde1);
-
-}
+  background-color: var(--cor-verde2);
+  color: white;
+  text-decoration: none;
+} 
 
 
 .imgSejaVida{
