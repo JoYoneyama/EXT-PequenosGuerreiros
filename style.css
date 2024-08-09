@@ -292,22 +292,23 @@ ul {
   margin-bottom: 15px;
 }
 
-.parceiros-content{
-  max-width: 100%;
+.parceiros-content {
+  overflow: hidden;
   width: 100%;
   height: 6cm;
-  margin-left: 48cm;
-  transition: 0.7s ease-in-out;
-  transform: translateX(0);
-  display: flex;
-  justify-content: end;
-  align-items: center;
+  position: relative;
 }
 
-.parceiros-content img{
+.parceiros-track {
+  display: flex;
+  width: calc(150px * 26); /* Ajuste de largura considerando o dobro de imagens */
+  transition: transform 0.7s ease-in-out;
+}
+
+.parceiros-track img {
   width: 150px;
   height: auto;
-  margin: 24px;
+  margin: 0 24px;
   border-radius: 7px;
 }
 

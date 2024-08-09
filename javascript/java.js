@@ -20,23 +20,30 @@ document.addEventListener("DOMContentLoaded", () => {         //checa se o docum
 
 //carrossel da seção parceiros
 
-const container = document.querySelector(".parceiros-content");
-const imagens = document.querySelectorAll(".parceiros-content img");
+const container = document.querySelector(".parceiros-track");
+const imagens = document.querySelectorAll(".parceiros-track img");
 
 let contador = 0;
+let larguraImg = 198; // Largura da imagem + margem
+const totalImagens = (imagens.length + 2) / 2;   //só imagens.length / 2 n da certo pq ele reinicia o slide no ultimo elemento, oq causava um tp dos elementos
 
-function slider(){
+function slider() {
+    contador++;
 
-  contador++;
+    // Reiniciar a transição para o início de forma suave
+    if (contador >= totalImagens) {
+        container.style.transition = "none";
+        contador = 0;
+        container.style.transform = `translateX(0px)`;
 
-  if(contador > imagens.length - 1){
-
-    contador = 0;
-
-  }
-
-  container.style.transform = `translateX(${-contador * 198}px)`;  //-contador pq esta movendo a img da esquerda para a direita
-                                                                   
-}                                                                  //o contador multiplica esse valor para atravessar todas as imagens
+        // Forçar a continuação da transição suavemente após redefinir o contador
+        setTimeout(() => {
+            container.style.transition = "transform 0.7s ease-in-out";
+            container.style.transform = `translateX(${-contador * larguraImg}px)`;  //-contador pq esta movendo a img da esquerda para a direita
+        }, 50);
+    } else {
+        container.style.transform = `translateX(${-contador * larguraImg}px)`;    //o contador multiplica esse valor para atravessar todas as imagens
+    }
+}
 
 setInterval(slider, 2000);
