@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pequenos Guerreiros</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="https://www.pequenosguerreiros.org.br/wp/wp-content/uploads/2021/11/cropped-logo-32x32.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,9 @@
     <!-- Inicio da pagina -->
 
 <body>
+
     <!--Navbar-->
+
     <nav>
        <ul>
         <div>
@@ -57,6 +59,7 @@
     </nav>
     
     <!--Carrossel-->
+
     <div class="slideshow-container">
 
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -89,7 +92,9 @@
        </div>
   
       </div>
+
       <!--Sobre nós-->
+
       <div class="container">
 
         <div class="item1 animate">
@@ -116,6 +121,8 @@
         </div>
       </div>
 
+      <!-- Info ONG -->
+
       <div class="imgInfo">
         <div class="info1 animate">
           <img src="images/icones/hourglass-end.png">
@@ -133,6 +140,8 @@
           <h2 style="color: #168fd8; font-size: 35px;">20</h2>
         </div>
       </div>
+
+      <!-- Parceiros -->
 
       <div class="nossosParceiros">
         <h1>Nossos parceiros</h1>
@@ -174,15 +183,74 @@
         <hr>
       </div>
 
-      <div class="Depoimentos">
+      <!-- Depoimentos -->
+
+      <div class="depoimentos">
         <h1>Depoimentos</h1>
         <hr>
-        <img src="https://www.pequenosguerreiros.org.br/wp/wp-content/uploads/2021/11/cropped-logo.png" width="64px" height="64px">
-        <!-- tambem precisa de um carrossel aqui, com os depoimentos-->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="dep-container">
+                <p class="dep-texto">
+                  "Fazemos parte do projeto 'Pequenos Guerreiros', sou muito grata mesmo a tudo que o projeto já fez por nós até hoje.
+                  Dentro do projeto temos o contato com outras mães que passam por uma situação parecida com a nossa, trocando experiências, tem
+                  um apoio. O projeto proporciona umas festinhas, encontros, proporcionando uma maior socialização. Sou grata de coração, muito 
+                  obrigada!"
+                </p>
+              </div>
+              <h4>Rosana</h4>
+              <h5>Mãe do príncipe Heitor Gabriel</h5>
+            </div>
+            <div class="carousel-item">
+              <div class="dep-container">
+                <p class="dep-texto">
+                  "Esse projeto trouxe para ela uma perspectiva de que a vida dela não tinha acabado ali, que ela ainda tinha o que viver, que a 
+                  vida dela não se resumia ao hospital. A Lowise amava participar dos eventos, participar das festas, vestir fantasias, de se sentir
+                  igual, todos carequinhas."
+                </p>
+              </div>
+              <h4>Larissa Maciel</h4>
+              <h5>Mãe da eterna princesa Lowise</h5>
+            </div>
+            <div class="carousel-item">
+              <div class="dep-container">
+                <p class="dep-texto">
+                  "A Adriana sempre nos ajudou, procurou médico, informações, se pôs disposta, ofereceu festinhas, mesmo quando a Maria estava
+                  internada eles faziam questão de estar presentes. Eu sou muito grata ao projeto porque sempre que precisei eles me ajudavam,
+                  com alimentos, remédios e todo apoio."
+                </p>
+              </div>
+              <h4>Pâmela</h4>
+              <h5>Mãe da eterna princesa Maria Clara</h5>
+            </div>
+            <div class="carousel-item">
+              <div class="dep-container">
+                <p class="dep-texto">
+                  "Esse projeto é um projeto que nasceu no coração da Adriana, e quando ela estava pensando em desistir a Sophia deu um novo sentido
+                  pro projeto Pequenos Guerreiros. E o mais bacana disso tudo é que a Adriana ama todas as crianças como filhos dela, e não deixa
+                  faltar nada, sempre fazia festas, distrações e dava tudo de bom para a Sophia. E esse projeto reacende a alegria delas fora do 
+                  hospital, estando sempre disposto a ajudar."
+                </p>
+              </div>
+              <h4>Franciele</h4>
+              <h5>Mãe da eterna princesa Sophia Hadassa</h5>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
 
-      <div id="containerrodape">
+      <!-- Rodapé -->
 
+      <div id="containerrodape">
 
         <div class="paginas animate">
           <h3>PAGINAS</h3>
@@ -199,7 +267,6 @@
           <iframe class="maps animate" loading="lazy" src="https://maps.google.com/maps?q=Avenida%20Vasconcelos%20Costa%2C%201500%20-%20Daniel%20Fonseca%2C%20Uberl%C3%A2ndia%20-%20MG%2C%20Brasil&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near" title="Avenida Vasconcelos Costa, 1500 - Daniel Fonseca, Uberlândia - MG, Brasil" aria-label="Avenida Vasconcelos Costa, 1500 - Daniel Fonseca, Uberlândia - MG, Brasil" data-origwidth="" data-origheight="" style="width: 800px;" height="150px;"></iframe>
           <p class="endereco">Avenida Vasconcelos Costa, Daniel Fonseca, 1500 - Uberlândia - MG, Brasil</p>
         </div>
-
 
         <div class="contato animate">
           <h3>ENTRE EM CONTATO</h3>
