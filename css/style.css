@@ -32,7 +32,7 @@ body{
 ul {
     list-style-type: none;
     margin: 0;
-    background-color: var(--cor-verde3);
+    background-image: linear-gradient(to bottom right, #48c39d, #48c361);
     filter: brightness(90%);
     opacity: 0.8;
     position: fixed;
