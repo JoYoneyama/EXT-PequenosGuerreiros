@@ -534,6 +534,11 @@ border-right: black;
   margin-bottom: 48px;
 }
 
+.nossasacoes-h1 hr{
+  width: 45%;
+  background-color: var(--cor-azul);
+}
+
 .nossasacoes-content{
   width: 80%;
   margin: 0 auto;
@@ -630,7 +635,7 @@ border-right: black;
   margin: 0 auto;
   border: 1px solid var(--cor-verde2);
   border-radius: 7px;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -685,12 +690,35 @@ border-right: black;
 /* -- Título -- */
 
 .cadastro-titulo{
-  margin-top: 90px;
+  margin-top: 148px;
+  margin-bottom: 48px;
+  text-align: center;
 }
 
 /* -- Carrossel -- */
 
+.cadastro-container-carrossel{
+  width: 768px;
+  margin: 0 auto;
+  border: 2px solid var(--cor-verde2);
+  border-radius: 9px;
+  box-shadow:  1px 1px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* -- Cadastre aqui -- */
+
+.container-cadastro{
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.cadastro-btn{
+  margin-bottom: 64px;
+}
 
 .botao-cadastro{
   display: flex;
