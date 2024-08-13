@@ -680,6 +680,41 @@ border-right: black;
   text-decoration: none;
 } 
 
+/* -- Página Cadastro -- */
+
+/* -- Título -- */
+
+.cadastro-titulo{
+  margin-top: 90px;
+}
+
+/* -- Carrossel -- */
+
+/* -- Cadastre aqui -- */
+
+.botao-cadastro{
+  display: flex;
+  flex-grow: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-azul);
+  border-radius: 1em;
+  width: 12em;
+  height: 3em;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.botao-cadastro:hover {
+  transform: translateY(-0.5em);
+  background-color: var(--cor-verde2);
+  color: white;
+  text-decoration: none;
+} 
+
 /* -- Animações -- */
 
 li.in-view{
