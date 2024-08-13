@@ -28,7 +28,9 @@ body{
     overflow-x: hidden;
 }
 
+
 /* -- Main page -- */
+
 
 /* -- NAVBAR -- */
 
@@ -433,10 +435,13 @@ border-color: var(--cor-verde2);
 border-style: solid;
 border-left: black;
 border-right: black;
+}
 
-display: flex;
-flex-direction: row;
-justify-content: space-around;
+.rodape-content{
+  display: flex;
+  justify-content: space-around;
+  width: 99%;
+  margin: 0 auto;
 }
 
 .paginas{
@@ -446,6 +451,10 @@ justify-content: space-around;
 
 .endereco{
   opacity: 0;
+}
+
+.endereco iframe{
+  width: 80%;
 }
 
 .endereco h3{
@@ -466,13 +475,15 @@ justify-content: space-around;
   opacity: 0;
 }
 
+
 /* -- Página Sobre nós -- */
+
 
 /* -- Nossa História -- */
 
 .container-sobrenos{
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
 }
 
 .sobrenos-h1{
@@ -486,25 +497,61 @@ justify-content: space-around;
 
 .sn-content-container1{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 28px;
 }
 
 .sobrenos-video video{
-  width: 550px;
+  width: 590px;
+  margin-top: 24px;
   border: 3px solid var(--cor-verde2);
+}
+
+.sobrenos-txt p{
+  width: 95%;
+}
+
+.sobrenos-h3{
+  display: flex;
+  justify-content: center;
+}
+
+.sobrenos-h3 h3{
+  color: var(--cor-azul);
 }
 
 /* -- Nossas Ações -- */
 
 .container-nossasacoes{
+  margin-top: 64px;
+  margin-bottom: 48px;
   border-top: 5px solid var(--cor-verde2);
   border-bottom: 5px solid var(--cor-verde2);
 }
 
+.nossasacoes-h1{
+  text-align: center;
+  margin-bottom: 48px;
+}
+
 .nossasacoes-content{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 24px;
+}
+
+.nossasacoes-icon{
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+.nossasacoes-icon h2{
+  text-align: center;
+} 
 
 /* -- Nosso Mascote -- */
 
@@ -519,7 +566,7 @@ justify-content: space-around;
 
 .mascote-content{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .mascote-img img{
@@ -527,9 +574,14 @@ justify-content: space-around;
 }
 
 .mascote-txt{
+  margin-top: 56px;
+  width: 45%;
+}
+
+.mascote-btn{
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  margin-top: 64px;
 }
 
 .botao-mascote{
@@ -556,6 +608,77 @@ justify-content: space-around;
 } 
 
 /* -- Nosso MVV -- */
+
+.container-mvv{
+  border-top: 5px solid var(--cor-verde2);
+}
+
+.mvv-content{
+  display: flex;
+  justify-content: center;
+}
+
+.mvv-h1{
+  margin-top: 48px; 
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.mvv-caixa{
+  width: 30%;
+  height: 20em;
+  margin: 0 auto;
+  border: 1px solid var(--cor-verde2);
+  border-radius: 7px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mvv-caixa i{
+  font-size: 48px;
+}
+
+.mvv-caixa h2{
+  width: 70%;
+  text-align: center;
+}
+
+.mvv-caixa p{
+  width: 70%;
+}
+
+.mvv-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  margin-bottom: 64px;
+}
+
+.botao-mvv{
+  display: flex;
+  flex-grow: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-azul);
+  border-radius: 1em;
+  width: 12em;
+  height: 3em;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.botao-mvv:hover {
+  transform: translateY(-0.5em);
+  background-color: var(--cor-verde2);
+  color: white;
+  text-decoration: none;
+} 
 
 /* -- Animações -- */
 
