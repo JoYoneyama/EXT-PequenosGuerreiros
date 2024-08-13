@@ -176,7 +176,7 @@ body{
   justify-content: center;
   align-items: center;
   background-color: var(--cor-azul);
-  border-radius: 1em;
+  border-radius: 0.5em;
   width: 12em;
   height: 3em;
   text-decoration: none;
@@ -361,7 +361,7 @@ body{
   justify-content: center;
   align-items: center;
   background-color: var(--cor-azul);
-  border-radius: 1em;
+  border-radius: 0.5em;
   width: 12em;
   height: 3em;
   text-decoration: none;
@@ -595,7 +595,7 @@ border-right: black;
   justify-content: center;
   align-items: center;
   background-color: var(--cor-azul);
-  border-radius: 1em;
+  border-radius: 0.5em;
   width: 15em;
   height: 3em;
   text-decoration: none;
@@ -668,7 +668,7 @@ border-right: black;
   justify-content: center;
   align-items: center;
   background-color: var(--cor-azul);
-  border-radius: 1em;
+  border-radius: 0.5em;
   width: 12em;
   height: 3em;
   text-decoration: none;
@@ -728,7 +728,7 @@ border-right: black;
   justify-content: center;
   align-items: center;
   background-color: var(--cor-azul);
-  border-radius: 1em;
+  border-radius: 0.5em;
   width: 12em;
   height: 3em;
   text-decoration: none;
@@ -751,11 +751,90 @@ border-right: black;
 
 /* -- Título -- */
 
+.parceiros-titulo{
+  margin-top: 144px;
+  text-align: center;
+}
+
+.parceiros-titulo hr{
+width: 75%;
+}
+
 /* -- Nossos Parceiros - Texto -- */
+
+.container-nossosparceiros{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nossosparceiros-txt{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nossosparceiros-txt p{
+  text-align: center;
+}
+
+.nossosparceiros-txt h3{
+  text-align: center;
+}
+
+.nossosparceiros-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+  margin-bottom: 48px;
+}
 
 /* -- Planos -- */
 
+.nossosparceiros-planos{
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  margin: 0 auto;
+}
+
 /* -- Nossos Parceiros - Imagem -- */
+
+.nossosparceiros-img{
+  margin-top: 72px;
+}
+
+.nossosparceiros-h1{
+  text-align: center;
+}
+
+.nossosparceiros-h1 hr{
+  width: 60%;
+}
+
+.nossosparceiros-content{
+  margin-top: 48px;
+  margin-bottom: 56px;
+}
+
+.nossosparceiros-caixa{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 64px;
+  width: 80%; 
+  margin: 0 auto;
+}
+
+.nossosparceiros-caixa img{
+  border-radius: 7px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+              0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+  transition: transform 0.2s ease;
+}
+
+.nossosparceiros-caixa img:hover{
+  transform: scale(0.9);
+}
 
 /* -- Animações -- */
 
