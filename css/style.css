@@ -842,6 +842,46 @@ width: 75%;
   transform: scale(0.9);
 }
 
+
+/* -- Página Produtos -- */
+
+
+/* -- Página Eventos -- */
+
+
+/* -- Página Contato -- */
+
+
+/* -- Título -- */
+
+.contato-titulo{
+  margin-top: 144px;
+  text-align: center;
+}
+
+/* -- Redes -- */
+
+.contato-redes{
+  display: flex;
+  justify-content: center;
+  gap: 48px
+}
+
+/* -- Formulário e Info -- */
+
+.contato-content{
+  display: flex;
+  justify-content: space-around;
+}
+
+.contato-form{
+  border: 2px solid black;
+}
+
+.contato-info{
+  border: 2px solid black;
+}
+
 /* -- Animações -- */
 
 li.in-view{
