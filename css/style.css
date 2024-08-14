@@ -697,6 +697,12 @@ border-right: black;
   text-align: center;
 }
 
+.cadastro-titulo h1{
+  font-family: "Allerta Stencil", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+}
+
 /* -- Carrossel -- */
 
 .cadastro-container-carrossel{
