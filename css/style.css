@@ -23,7 +23,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #fcfafa;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
 }
@@ -504,7 +504,7 @@ border-right: black;
 
 .sn-content-container1{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 }
@@ -517,8 +517,19 @@ border-right: black;
   gap: 30px;
 }
 
-.sn-item{
+.sn-item1{
   width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sn-item2{
+  width: 48%;
+}
+
+.sobrenos-video{
+  margin-right: 3%;
 }
 
 .sobrenos-video video{
@@ -529,7 +540,7 @@ border-right: black;
 }
 
 .sobrenos-txt p{
-  width: 95%;
+  width: 91%;
   margin-top: 2em;
   padding-left: 30px;
 }
@@ -1057,35 +1068,117 @@ width: 75%;
 
 /* -- Formulário e Info -- */
 
+.contato-h1{
+  margin-left: 10%;
+}
+
+.contato-h1 hr{
+  width: 70%;
+  margin-left: 10%;
+  margin-bottom: 48px;
+}
+
 .contato-content{
   display: flex;
   justify-content: center;
   gap: 10%;
+  margin-bottom: 48px;
 }
 
 .contato-form{
-  border: 2px solid black;
+  border: none;
+  border-radius: 1em;
   width: 30%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+              0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+}
+
+.contato-form h2{
+  text-align: center;
+}
+
+.contato-form label{
+  margin-left: 12%;
 }
 
 .contato-text1{
-  width: 80%;
-  height: 2em;
+  width: 75%;
+  height: 2.3em;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  margin-left: 10%;
   border: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
               0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
 }
 
 .contato-text2{
-  width: 80%;
+  width: 75%;
+  margin-top: 1%;
+  margin-bottom: 4%;
+  margin-left: 10%;
   border: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
               0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
 }
 
+.contato-form-btn{
+  margin-left: 12%;
+}
+
+.contato-enviar{
+  background-color: var(--cor-azul);
+  color: white;
+  width: 20%;
+  height: 2.2em;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+              0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+  margin-bottom: 24px;
+  transition: transform 0.2s ease;
+}
+
+.contato-enviar:hover{
+  transform: translateY(-0.3em);
+  background-color: var(--cor-verde2);
+  color: white;
+  text-decoration: none;
+}
+
 .contato-info{
-  border: 2px solid black;
+  border: none;
+  border-radius: 1em;
   width: 30%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+              0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+}
+
+.contato-info h2{
+  text-align: center;
+}
+
+.contato-info h3{
+  margin-left: 2%;
+}
+
+.contato-info a{
+  color: black;
+  text-decoration: none;
+  transition: color 0.1s;
+}
+
+.contato-info p{
+  margin-left: 5%;
+}
+
+.contato-info i{
+  margin-right: 4px;
+}
+
+.contato-info a:hover{
+  color: var(--cor-azul);
 }
 
 /* -- Animações -- */
