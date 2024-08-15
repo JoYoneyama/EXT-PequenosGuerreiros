@@ -1022,15 +1022,33 @@ width: 75%;
 
 .contato-content{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 10%;
 }
 
 .contato-form{
   border: 2px solid black;
+  width: 30%;
+}
+
+.contato-text1{
+  width: 80%;
+  height: 2em;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+              0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+}
+
+.contato-text2{
+  width: 80%;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+              0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
 }
 
 .contato-info{
   border: 2px solid black;
+  width: 30%;
 }
 
 /* -- Animações -- */
