@@ -1087,8 +1087,101 @@ border-right: black;
   text-decoration: none;
 } 
 
+
 /* -- Página Eventos -- */
 
+
+/* -- Eventos Banner -- */
+
+.eventos-banner{
+  margin-top: 95px;
+  height: 21em;
+  overflow: hidden;
+  border-bottom: 4px solid var(--cor-verde2);
+}
+
+.eventos-banner img{
+  transform: translate(0%, -15%);
+}
+
+.eventos-banner h1{
+  color: white;
+  position: absolute;
+  z-index: 1;
+  transform: translate(160%, 350%);
+}
+
+/* -- Eventos -- */
+
+.eventos-linha{
+  width: 85%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.eventos-caixa{
+  width: 75%;
+  border: none;
+  background-color: aliceblue;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+              0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+}
+
+.eventos-caixa img{
+  width: 25em;
+  height: 250px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.eventos-caixa img:hover{
+  transform: scale(0.95);
+}
+
+.eventos-caixa h6{
+  width: 85%;
+  text-align: center;
+  margin: 16px auto;
+}
+
+.eventos-caixa h2{
+  width: 85%;
+  text-align: center;
+  margin: 48px auto;
+}
+
+/* -- Botão -- */
+
+.eventos-btn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.botao-eventos{
+  display: flex;
+  flex-grow: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-azul);
+  border-radius: 0.5em;
+  width: 12em;
+  height: 3em;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.botao-eventos:hover{
+  transform: scale(1.1);
+  background-color: var(--cor-verde2);
+  color: white;
+  text-decoration: none;
+} 
 
 /* -- Página Contato -- */
 
