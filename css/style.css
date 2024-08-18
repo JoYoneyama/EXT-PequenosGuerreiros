@@ -421,19 +421,22 @@ border-left: black;
 border-right: black;
 }
 
-.contato a{
-
-color: black;
-text-decoration: none;
-transition: transform 0.2s, color 0.2s;
+.contato-cont{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.contato a:hover{
-
-  transform: scale (1.1);
-  color: var(--cor-azul);
+.contato-cont a{
+  color: black;
   text-decoration: none;
-  }
+  transition: transform 0.2s, color 0.2s;
+}
+
+.contato-cont a:hover{
+  transform: scale(0.9);
+  color: var(--cor-azul);
+}
 
 .rodape-content{
   display: flex;
