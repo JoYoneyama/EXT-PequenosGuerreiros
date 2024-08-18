@@ -49,7 +49,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 45px;
   }
 
   li a { 
@@ -294,6 +293,8 @@ body{
   margin-top: 10cm;
   margin-bottom: 2cm;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 .nossosParceiros a{
@@ -360,6 +361,7 @@ body{
 
 .depoimentos h1{
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 96px;
   margin-bottom: 24px;
   font-size: 2.5em;
@@ -472,7 +474,7 @@ border-right: black;
   margin-top: 144px;
   text-align: center;
   font-family: "Allerta Stencil", sans-serif;
-  font-size: 2.5em;
+  font-size: 1.8em;
   font-weight: 500;
 }
 
@@ -802,7 +804,7 @@ border-right: black;
   width: 65%;
   margin-bottom: 24px;
   color: white;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 1px 2px 2px black;
 }
 
 .botao-cadastro{
@@ -982,7 +984,7 @@ border-right: black;
   font-family: 'Lato';
   font-weight: 700;
   color: var(--cor-azul);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 
@@ -1015,7 +1017,7 @@ border-right: black;
   justify-content: center;
   align-items: center;
   width: 80%;
-  margin-top: 32px;
+  margin-top: 12px;
 }
 
 .prodmain-txt{
@@ -1024,6 +1026,7 @@ border-right: black;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   text-align: justify;
+  text-indent: 7%;
 }
 
 .prodmain-btn{
@@ -1089,13 +1092,18 @@ border-right: black;
 
 } */
 
-.produtos-titulo2 h2{
+.produtos-titulo2{
+  padding-bottom: 2%;
+  border-bottom: 3px solid var(--cor-verde2);
+}
+
+.produtos-titulo2 h1{
   margin: 0 auto;
   margin-top: 10px;
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .lista-produtos{
@@ -1199,6 +1207,7 @@ border-right: black;
 
 .eventos-banner{
   margin-top: 95px;
+  margin-bottom: 3%;
   height: 21em;
   overflow: hidden;
   border-bottom: 4px solid var(--cor-verde2);
@@ -1213,7 +1222,7 @@ border-right: black;
   position: absolute;
   z-index: 1;
   font-family: 'Allerta Stencil', sans-serif;
-  transform: translate(100%, 350%);
+  transform: translate(110%, 330%);
   text-shadow: 1px 1px 2px black;
 }
 
@@ -1363,7 +1372,7 @@ border-right: black;
 .contato-h1 h1{
   font-size: 2em;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .contato-h1 hr{
