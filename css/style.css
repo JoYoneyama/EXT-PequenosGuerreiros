@@ -202,6 +202,8 @@ body{
 
 .sobreNos h1{
   margin-left: 1134px;
+  font-size: 2.5em;
+  font-weight: 500;
 }
 
 .sobreNos hr{
@@ -353,6 +355,8 @@ body{
   text-align: center;
   margin-top: 96px;
   margin-bottom: 24px;
+  font-size: 2.5em;
+  font-weight: 500;
 }
 
 .depoimentos hr{
@@ -461,6 +465,8 @@ border-right: black;
   margin-top: 144px;
   text-align: center;
   font-family: "Allerta Stencil", sans-serif;
+  font-size: 2.5em;
+  font-weight: 500;
 }
 
 .sobrenos-content{
@@ -738,7 +744,8 @@ border-right: black;
 .cadastro-titulo h1{
   font-family: "Allerta Stencil", sans-serif;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 2.5em;
+  font-weight: 500;
 }
 
 .cadastro-container{
@@ -784,9 +791,11 @@ border-right: black;
 
 .cadastro-txt{
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
   width: 65%;
   margin-bottom: 24px;
   color: white;
+  text-shadow: 2px 2px 2px black;
 }
 
 .botao-cadastro{
@@ -938,11 +947,37 @@ border-right: black;
   margin-top: 144px;
   text-align: center;
   border-bottom: 4px solid var(--cor-verde2);
+  font-family: 'Allerta Stencil', sans-serif;
+  font-weight: 500;
+}
+
+.produtos-titulo h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1em;
+  width: 30%;
+  margin: 0 auto 5px auto;
 }
 
 .produto-main{
   border-bottom: 5px solid var(--cor-verde2);
 }
+
+.prodmain-h1{
+  display: flex;
+  align-self: center;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.prodmain-h1 h2{
+  font-family: 'Lato';
+  font-weight: 700;
+  color: var(--cor-azul);
+  text-decoration: underline;
+}
+
 
 .prodmain-content{
   width: 85%;
@@ -954,6 +989,9 @@ border-right: black;
 
 .prodmain-quokkinha{
   width: 75%;
+  margin-right: -100px;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .prodmain-quokkinha img{
@@ -965,6 +1003,10 @@ border-right: black;
 }
 
 .prodmain-caixa{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   margin-top: 32px;
 }
@@ -972,6 +1014,9 @@ border-right: black;
 .prodmain-txt{
   width: 90%;
   margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: justify;
 }
 
 .prodmain-btn{
@@ -984,6 +1029,17 @@ border-right: black;
 
 .prodmain-btn h2{
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 450;
+  font-style: italic;
+}
+
+.prodmain-btn h2:last-of-type{
+  font-family: 'Allerta Stencil', serif;
+  font-weight: 900;
+  color: var(--cor-verde2);
+  text-shadow: 1px 1px 2px black;
+  font-style: normal;
 }
 
 .botao-prodmain{
@@ -993,6 +1049,7 @@ border-right: black;
   align-items: center;
   background-color: var(--cor-azul);
   border-radius: 0.5em;
+  margin-top: 15px;
   width: 12em;
   height: 3em;
   text-decoration: none;
@@ -1021,10 +1078,23 @@ border-right: black;
   margin: 0 auto;
 }
 
+/* .produtos-acessorios{
+
+} */
+
+.produtos-titulo2 h2{
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 .lista-produtos{
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   gap: 24px;
   margin-top: 24px;
@@ -1033,32 +1103,58 @@ border-right: black;
 .lista-produtos-outros{
   display: flex;
   justify-content: flex-start;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   gap: 24px;
   margin-top: 24px;
 }
 
 .caixa-produtos{
-  width: 15.1em;
+  width: 20%;
   border: 2px solid var(--cor-verde2);
   border-radius: 7px;
   overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.caixa-produtos a{
+  margin-top: auto;
 }
 
 .caixa-produtos img{
-  width: 15em;
-  height: 203px;
-  max-height: 203px;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
   margin: 0 auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .caixa-produtos h3{
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 550;
+  font-size: 1.2em;
+  margin-top: auto;
+}
+
+.caixa-produtos h3:last-of-type{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 550;
+  font-size: 1.2em;
+  margin-top: 5%;
+  color: var(--cor-azul);
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 0px;
 }
 
 .caixa-produtos p{
   margin-left: 3%;
+  font-family: 'Lato', 'Montserrat', sans-serif;
 }
 
 .botao-produtos{
@@ -1075,7 +1171,8 @@ border-right: black;
   margin-bottom: 24px;
   text-decoration: none;
   color: #fff;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 1em;
   transition: transform 0.2s, background-color 0.2s;
 }
@@ -1108,7 +1205,8 @@ border-right: black;
   color: white;
   position: absolute;
   z-index: 1;
-  transform: translate(160%, 350%);
+  font-family: 'Allerta Stencil', sans-serif;
+  transform: translate(100%, 350%);
 }
 
 /* -- Eventos -- */
@@ -1205,6 +1303,8 @@ border-right: black;
 
 .contato-h1{
   margin-left: 10%;
+  font-size: 2.5em;
+  font-weight: 500;
 }
 
 .contato-h1 hr{
