@@ -421,6 +421,20 @@ border-left: black;
 border-right: black;
 }
 
+.contato a{
+
+color: black;
+text-decoration: none;
+transition: transform 0.2s, color 0.2s;
+}
+
+.contato a:hover{
+
+  transform: scale (1.1);
+  color: var(--cor-azul);
+  text-decoration: none;
+  }
+
 .rodape-content{
   display: flex;
   justify-content: space-around;
