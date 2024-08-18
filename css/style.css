@@ -49,11 +49,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  ul div{
-    margin-left: 3px;
-    margin-right: 3px;
+    gap: 45px;
   }
 
   li a { 
@@ -78,6 +74,17 @@ body{
     color: var(--cor-azul);
     text-decoration: none;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar-ul i{
+    color: white;
+    font-size: 1.5em;
+    transition: color 0.2s, transform 0.2s;
+  }
+
+  .navbar-ul i:hover{
+    color: var(--cor-azul);
+    transform: scale(1.1);
   }
 
   * {box-sizing:border-box}
@@ -1322,13 +1329,21 @@ border-right: black;
 }
 
 .contato-redes i{
-  color: var(--cor-azul-escuro);
-  transition: transform 0.2s, color 0.2s;
+  color: var(--cor-verde2);
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5px;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s, color 0.2s, background-color 0.2s, border-radius 0.2s, width 0.2s, height 0.2s;
 }
 
 .contato-redes i:hover{
   transform: scale(1.1);
-  color: var(--cor-verde1);
+  color: white;
+  background-color: var(--cor-verde1);
+  border-radius: 50%;
 }
 
 /* -- Formulário e Info -- */
@@ -1490,6 +1505,10 @@ li.in-view{
   animation: animacao 1.5s forwards;
 }
 
+.fa-brands.in-view{
+  animation: animacao 1.5s forwards;
+}
+
 .pg.in-view{
   animation: animacao 2s forwards;
   animation-delay: 0.6s;
@@ -1537,9 +1556,145 @@ li.in-view{
   animation-delay: 1.2s;
 }
 
+
+/* -- SOBRE NOS | ANIMAÇÕES */
+
+.sn-content-container1.in-view , .sn-content-container2.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.sobrenos-h1.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.container-nossasacoes.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.container-mascote.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.container-mvv.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+/* -- CADASTRO | ANIMAÇÕES */
+
+.sn-content-container1.in-view , .sn-content-container2.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.cadastro-container.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.cadastro-titulo.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+/* -- PARCEIROS | ANIMAÇÕES */
+
+.parceiros-titulo.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.container-nossosparceiros.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.nossosparceiros-btn.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.nossosparceiros-planos.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.nossosparceiros-img.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+/* -- PRODUTOS | ANIMAÇÕES */
+
+.produtos-titulo.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.produtos-titulo2.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.prodmain-h1.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.prodmain-content.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+/* -- EVENTOS | ANIMAÇÕES */
+
+.eventos-banner.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.eventos-caixa.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.eventos-btn.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+/* -- EVENTOS | ANIMAÇÕES */
+
+.contato-h1.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.contato-content.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+.contato-info.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+
+
+
+
+
+
 /* -- Proporções de tela -- */
 
 @media (min-width: 336px){
+
+  
   .slideshow-container{
     height: 3cm;
   }
@@ -1558,6 +1713,10 @@ li.in-view{
 }
 
 @media(min-width: 992px){
+  .navbar-ul{
+    gap: 15px;
+  }
+
   .slideshow-container{
     height: 10cm;
   }
