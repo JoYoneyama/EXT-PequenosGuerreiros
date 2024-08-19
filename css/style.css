@@ -424,6 +424,10 @@ border-right: black;
 .contato-cont{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 .contato-cont a{
@@ -436,6 +440,26 @@ border-right: black;
   transform: scale(0.9);
   color: var(--cor-azul);
 }
+
+  .rodape-paginas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+  }
+
+  .rodape-paginas a{
+    color: black;
+    text-decoration: none;
+    transition: transform 0.2s, color 0.2s;
+  }
+
+  .rodape-paginas a:hover{
+    transform: scale(0.9);
+    color: var(--cor-azul);
+  }
 
 .rodape-content{
   display: flex;
@@ -1231,6 +1255,7 @@ border-right: black;
 
 .eventos-banner img{
   transform: translate(0%, -15%);
+  width: 100%;
 }
 
 .eventos-banner h1{
@@ -1238,7 +1263,7 @@ border-right: black;
   position: absolute;
   z-index: 1;
   font-family: 'Allerta Stencil', sans-serif;
-  transform: translate(110%, 330%);
+  transform: translate(150%, 330%);
   text-shadow: 1px 1px 2px black;
 }
 
@@ -1692,7 +1717,12 @@ li.in-view{
   animation-delay: 0.0s;
 }
 
-/* -- EVENTOS | ANIMAÇÕES */
+.contato-titulo.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
+
+/* -- CONTATOS | ANIMAÇÕES */
 
 .contato-h1.in-view{
   animation: animacao 2s forwards;
