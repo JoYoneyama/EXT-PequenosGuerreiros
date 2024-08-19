@@ -1737,12 +1737,19 @@ li.in-view{
   animation-delay: 0.0s;
 }
 
+
+
+/* -- CONTATOS | ANIMAÇÕES */
+
 .contato-titulo.in-view{
   animation: animacao 2s forwards;
   animation-delay: 0.0s;
 }
 
-/* -- CONTATOS | ANIMAÇÕES */
+.contato-redes.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.0s;
+}
 
 .contato-h1.in-view{
   animation: animacao 2s forwards;
@@ -1773,7 +1780,9 @@ li.in-view{
 /* -- Proporções de tela -- */
 
 @media (min-width: 336px){
-
+  .eventos-banner h1{
+    transform: translate(130%, 330%);
+  }
   
   .slideshow-container{
     height: 3cm;
@@ -1793,6 +1802,10 @@ li.in-view{
 }
 
 @media(min-width: 992px){
+  .eventos-banner h1{
+    transform: translate(60%, 330%);
+  }
+  
   .navbar-ul{
     gap: 15px;
   }
@@ -1803,12 +1816,20 @@ li.in-view{
 }
 
 @media(min-width: 1200px){
+  .eventos-banner h1{
+    transform: translate(100%, 330%);
+  }
+
   .slideshow-container{
     height: 12cm;
   }
 }
 
 @media (min-width: 1400px){
+  .eventos-banner h1{
+    transform: translate(130%, 330%);
+  }
+
   ul{
     height: 95px;
   }
