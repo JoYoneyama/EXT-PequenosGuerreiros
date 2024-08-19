@@ -995,6 +995,7 @@ border-right: black;
 .produtos-titulo{
   margin-top: 144px;
   text-align: center;
+  opacity: 0;
   border-bottom: 4px solid var(--cor-verde2);
   font-family: 'Allerta Stencil', sans-serif;
   font-weight: 500;
@@ -1034,6 +1035,7 @@ border-right: black;
   display: flex;
   justify-content: space-around;
   margin-bottom: 48px;
+  opacity: 0;
 }
 
 .prodmain-quokkinha{
@@ -1262,6 +1264,7 @@ border-right: black;
   color: white;
   position: absolute;
   z-index: 1;
+  opacity: 0;
   font-family: 'Allerta Stencil', sans-serif;
   transform: translate(150%, 330%);
   text-shadow: 1px 1px 2px black;
@@ -1287,6 +1290,7 @@ border-right: black;
   border: none;
   margin: 20px 0px;
   background-color: aliceblue;
+  opacity: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
               0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
   overflow: hidden;
@@ -1376,6 +1380,7 @@ border-right: black;
   margin-top: 20px;
   gap: 48px;
   font-size: 2.5em;
+  opacity: 0;
 }
 
 .contato-redes i{
@@ -1408,6 +1413,7 @@ border-right: black;
 .contato-h1{
   text-align: center;
   margin: 40px auto;
+  opacity: 0;
 }
 
 .contato-h1 h1{
@@ -1432,6 +1438,7 @@ border-right: black;
   border-radius: 1em;
   width: 30%;
   color: white;
+  opacity: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
@@ -1509,6 +1516,7 @@ input, textarea {
   border: none;
   border-radius: 1em;
   width: 30%;
+  opacity: 0;
   color: white;
   background-color: var(--cor-verde1); 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
@@ -1702,14 +1710,26 @@ li.in-view{
 
 /* -- EVENTOS | ANIMAÇÕES */
 
-.eventos-banner.in-view{
-  animation: animacao 2s forwards;
+@keyframes animacao2{
+
+  from{
+    opacity: 0;
+    transform: translateY(-5%), translate(5%, -10%);
+  } 
+  to{
+    opacity: 1;
+    transform: translateY(-15%), translate(0%, -15%);
+  }
+}
+
+.eventos-banner h1.in-view{
+  animation: animacao2 2s forwards;
   animation-delay: 0.0s;
 }
 
 .eventos-caixa.in-view{
   animation: animacao 2s forwards;
-  animation-delay: 0.0s;
+  animation-delay: 0.2s;
 }
 
 .eventos-btn.in-view{
@@ -1729,14 +1749,19 @@ li.in-view{
   animation-delay: 0.0s;
 }
 
-.contato-content.in-view{
+.contato-redes.in-view{
   animation: animacao 2s forwards;
-  animation-delay: 0.0s;
+  animation-delay: 0.2s;
+}
+
+.contato-form.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.4s;
 }
 
 .contato-info.in-view{
   animation: animacao 2s forwards;
-  animation-delay: 0.0s;
+  animation-delay: 0.6s;
 }
 
 
