@@ -1266,7 +1266,7 @@ border-right: black;
   z-index: 1;
   opacity: 0;
   font-family: 'Allerta Stencil', sans-serif;
-  transform: translate(150%, 330%);
+  transform: translate(160%, 330%);
   text-shadow: 1px 1px 2px black;
 }
 
@@ -1283,6 +1283,7 @@ border-right: black;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  margin-bottom: 48px;
 }
 
 .eventos-caixa{
@@ -1827,7 +1828,7 @@ li.in-view{
 
 @media (min-width: 1400px){
   .eventos-banner h1{
-    transform: translate(130%, 330%);
+    transform: translate(150%, 330%);
   }
 
   ul{
